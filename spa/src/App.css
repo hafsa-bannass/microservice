@@ -1,0 +1,64 @@
+body {
+    background-color: grey;
+    color: white;
+    max-width: 1000px; /* Set the maximum width of the page */
+    margin: 0 auto; /* Center the page horizontally */
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    background-color:white;
+    color: rgb(33, 44, 71);
+    backdrop-filter: blur(10px);
+    padding: 10px; /* Add some padding to the product list */
+}
+
+.product-card {
+    border: 0px solid #ccc;
+    padding: 10px;
+}
+
+img {
+    width: 80%; /* Make images responsive within their containers */
+}
+
+@media (max-width: 768px) {
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+.title {
+    text-decoration: none;
+    color:  rgb(33, 44, 71);
+}
+
+.title:hover {
+    text-decoration: underline;
+}
+
+.button_commander,
+.button_payer {
+    text-decoration: none;
+}
+
+.button_commander:hover,
+.button_payer:hover {
+    text-decoration: underline;
+}
+
+p {
+    width: 90%; /* Make paragraphs responsive within their containers */
+}
+
+.paiement {
+    padding: 20px;
+}
