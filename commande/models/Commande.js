@@ -1,6 +1,4 @@
-// Define an array to store instances of the Commande class
 var commandes = [];
-
 // Define a class named Commande
 class Commande {
   // Constructor function to initialize object properties
@@ -11,17 +9,14 @@ class Commande {
     this.quantite = quantite;
     this.commandePayee = commandePayee;
   }
-  
   // Static method to find a Commande by its ID
   static findById(id) {
     return commandes.find(cmd => cmd.id === id);
   }
-
   // Static method to save a new Commande instance to the array
   static save(commande) {
     commandes.push(commande);
   }
-
   // Static method to update an existing Commande by ID with new data
   static update(id, updatedCommande) {
     // Find the index of the Commande with the given ID in the array
@@ -38,7 +33,6 @@ class Commande {
     }
   }
 }
-
 // Export the Commande class for use in other modules
 module.exports = Commande;
 
